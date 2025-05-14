@@ -6,6 +6,7 @@
     <title>Edit Task</title>
   </head>
   <body>
+    <%- include('../partials/navbar') %>
     <main>
       <form action="/tasks/<%= task._id %>?_method=patch" method="post">
         <input type="text" name="task[name]" value="<%= task.name %>" />

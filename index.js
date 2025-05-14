@@ -52,7 +52,7 @@ app.delete("/tasks/:id", async (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("This is a goal tracker app");
+  res.render("home");
 });
 
 app.listen(3000);
